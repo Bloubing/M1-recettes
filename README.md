@@ -76,7 +76,7 @@ php artisan migrate:fresh --seed
 
 -   Créer une nouvelle OAuth App
 
--   Renseigner "http://localhost:8000/" pour Homepage URL, "http://localhost:8000/login/github/callback" pour Authorization callback URL.
+-   Renseigner le [NOM_DOMAINE] pour Homepage URL et "[NOM_DOMAINE]/login/github/callback" pour Authorization callback URL.
 
 -   Copier le Client ID dans le `.env` et le mettre dans `GITHUB_CLIENT_ID`
 
