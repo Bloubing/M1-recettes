@@ -1,13 +1,17 @@
-<div class="relative isolate overflow-hidden  py-16 sm:py-24 lg:py-32  rounded-3xl">
+<div class="relative isolate overflow-hidden   sm:py-24 lg:py-32  rounded-3xl">
+
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div class="max-w-xl lg:max-w-lg">
-                <h2 class="text-4xl font-semibold tracking-tight intersect:motion-preset-fade-lg ">Abonnez-vous à notre
+                <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight intersect:motion-preset-fade-lg ">
+                    Abonnez-vous à
+                    notre
                     newsletter</h2>
-                <p class="mt-4 text-lg ">Une newsletter faite par des amateurs de cuisine, pour des amateurs de cuisine.
+                <p class="mt-4 text-lg ">Une newsletter faite par des amateurs de cuisine, pour des amateurs de
+                    cuisine.
                 </p>
                 <div class="mt-6 flex max-w-md gap-x-4">
-                    <form class="flex space-x-2" method="post" action="/newsletter">
+                    <form class="flex-col sm:flex-row flex space-x-2 space-y-2" method="post" action="/newsletter">
                         @csrf
                         @method('patch')
                         <label for="email-address" class="sr-only">Adresse e-mail</label>
@@ -36,7 +40,8 @@
                         </svg>
                     </div>
                     <dt class="mt-4 text-base font-semibold ">Articles hebdomadaires</dt>
-                    <dd class="mt-2 text-base/7 ">Chaque semaine, recevez une nouvelle recette plus délicieuse que la
+                    <dd class="mt-2 text-base/7 ">Chaque semaine, recevez une nouvelle recette plus délicieuse que
+                        la
                         précédente.</dd>
                 </div>
                 <div class="flex flex-col items-start">
@@ -48,7 +53,8 @@
                         </svg>
                     </div>
                     <dt class="mt-4 text-base font-semibold ">Pas de spam</dt>
-                    <dd class="mt-2 text-base/7 ">Promis, nous ne spammerons pas votre boîte mail. Qualité garantie !
+                    <dd class="mt-2 text-base/7 ">Promis, nous ne spammerons pas votre boîte mail. Qualité garantie
+                        !
                     </dd>
                 </div>
             </dl>
