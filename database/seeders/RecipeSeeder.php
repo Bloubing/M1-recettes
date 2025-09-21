@@ -32,9 +32,10 @@ class RecipeSeeder extends Seeder
 
         // Création de 200 recipes assignées à un random user
         for ($i = 0; $i < 200; $i += 1) {
+            $user = User::inRandomOrder()->first();
+
             Recipe::factory()
-                ->count(1)
-                ->for(User::find(id: rand(1, User::count())))
+                ->for($user)
                 ->create();
         }
     }
