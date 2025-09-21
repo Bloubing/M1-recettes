@@ -55,9 +55,9 @@ composer install
 ### Configuration du projet
 
 ```bash
-cp .env.example .env`
-php artisan key:generate`
-php artisan storage:link`
+cp .env.example .env
+php artisan key:generate
+php artisan storage:link
 php artisan vendor:publish --provider="Laravolt\Avatar\ServiceProvider"
 ```
 
