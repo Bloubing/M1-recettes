@@ -6,7 +6,7 @@
             <a href="{{ route('home') }}" class="group navbar-item pl-7 pr-5 pt-0 ">
                 <x-application-logo width=2rem height=2rem />
                 <span
-                    class="font-semibold pl-4 text-2xl text-gray-700 motion-preset-slide-right-md motion-duration-2000 group-hover:text-orange-500">Recettes</span>
+                    class="hidden sm:block font-semibold pl-4 text-2xl text-gray-700 motion-preset-slide-right-md motion-duration-2000 group-hover:text-orange-500">Recettes</span>
             </a>
 
         </div>
