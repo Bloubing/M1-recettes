@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'email' => 'admin@example.test',
             'password' => 'admin'
         ])->roles()->attach(Role::find(1));
-        User::find(1)->roles()->attach(ROle::find(2));
+        User::find(1)->roles()->attach(Role::find(2));
 
 
         // Création du modérateur
